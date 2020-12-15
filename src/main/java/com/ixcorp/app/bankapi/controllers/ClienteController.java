@@ -1,8 +1,8 @@
 package com.ixcorp.app.bankapi.controllers;
 
-import com.ixcorp.app.bankapi.config.ServiceResult;
-import com.ixcorp.app.bankapi.dto.ClienteDTO;
-import com.ixcorp.app.bankapi.service.ClienteService;
+import com.ixcorp.app.bankapi.application.DTO.ClienteDTO;
+import com.ixcorp.app.bankapi.application.response.ServiceResult;
+import com.ixcorp.app.bankapi.application.service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -52,7 +52,6 @@ public class ClienteController {
         try {
 
             ServiceResult serviceResult = new ServiceResult();
-
             List<ClienteDTO> clienteDTOList = clienteService.listarCliente();
             serviceResult.setData(clienteDTOList);
 

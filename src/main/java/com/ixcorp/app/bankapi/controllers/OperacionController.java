@@ -1,9 +1,8 @@
 package com.ixcorp.app.bankapi.controllers;
 
-import com.ixcorp.app.bankapi.config.ServiceResult;
-import com.ixcorp.app.bankapi.dto.ClienteDTO;
-import com.ixcorp.app.bankapi.dto.OperacionDTO;
-import com.ixcorp.app.bankapi.service.OperacionService;
+import com.ixcorp.app.bankapi.application.DTO.OperacionDTO;
+import com.ixcorp.app.bankapi.application.response.ServiceResult;
+import com.ixcorp.app.bankapi.application.service.OperacionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +22,6 @@ public class OperacionController {
         try {
 
             ServiceResult result = new ServiceResult();
-         //   cuentaService.createCuenta(cuentaDTO);
 
             return new ResponseEntity<ServiceResult>(result, HttpStatus.CREATED);
 

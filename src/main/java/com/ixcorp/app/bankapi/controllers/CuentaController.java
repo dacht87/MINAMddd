@@ -1,8 +1,8 @@
 package com.ixcorp.app.bankapi.controllers;
 
-import com.ixcorp.app.bankapi.config.ServiceResult;
-import com.ixcorp.app.bankapi.dto.CuentaDTO;
-import com.ixcorp.app.bankapi.service.CuentaService;
+import com.ixcorp.app.bankapi.application.DTO.CuentaDTO;
+import com.ixcorp.app.bankapi.application.response.ServiceResult;
+import com.ixcorp.app.bankapi.application.service.CuentaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
